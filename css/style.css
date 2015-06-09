@@ -1,0 +1,73 @@
+html,body{
+height:100%;
+line-height:1.05;
+font-size: 14px;
+}
+
+
+/*
+#likeWidget{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+*/
+#likeWidget{
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#likeWidget div{
+    text-shadow: 0px 2px 3px #000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+#thumbsUp>img{
+    margin-top: 5%;
+    width: 100%;
+    float: left;
+    -webkit-filter:drop-shadow(0px 1px 1px #000);
+}
+
+#likes{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+#name{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+#link{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+#about{
+
+}
+
+.ripple{
+    -webkit-animation: inout 2s ease-out;
+    animation: inout 2s;
+    position: fixed;
+    width: 1000px;
+    height: 1000px !important;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%) scale(0,0);
+    -webkit-transform: translate(-50%, -50%) scale(0,0);
+    border: 1px solid #FFF;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes inout { /* Safari & Chrome */
+  0%   { opacity:1.0; -webkit-transform: translate(-50%, -50%) scale(0, 0); }
+  100% { opacity:0.0; -webkit-transform: translate(-50%, -50%) scale(1, 1); }
+}
